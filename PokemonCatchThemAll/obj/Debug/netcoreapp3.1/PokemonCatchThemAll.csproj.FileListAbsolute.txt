@@ -1,0 +1,13 @@
+D:\Thunder\PokemonCatchThemAll\PokemonCatchThemAll\bin\Debug\netcoreapp3.1\PokemonCatchThemAll.exe
+D:\Thunder\PokemonCatchThemAll\PokemonCatchThemAll\bin\Debug\netcoreapp3.1\PokemonCatchThemAll.deps.json
+D:\Thunder\PokemonCatchThemAll\PokemonCatchThemAll\bin\Debug\netcoreapp3.1\PokemonCatchThemAll.runtimeconfig.json
+D:\Thunder\PokemonCatchThemAll\PokemonCatchThemAll\bin\Debug\netcoreapp3.1\PokemonCatchThemAll.runtimeconfig.dev.json
+D:\Thunder\PokemonCatchThemAll\PokemonCatchThemAll\bin\Debug\netcoreapp3.1\PokemonCatchThemAll.dll
+D:\Thunder\PokemonCatchThemAll\PokemonCatchThemAll\bin\Debug\netcoreapp3.1\PokemonCatchThemAll.pdb
+D:\Thunder\PokemonCatchThemAll\PokemonCatchThemAll\obj\Debug\netcoreapp3.1\PokemonCatchThemAll.csprojAssemblyReference.cache
+D:\Thunder\PokemonCatchThemAll\PokemonCatchThemAll\obj\Debug\netcoreapp3.1\PokemonCatchThemAll.AssemblyInfoInputs.cache
+D:\Thunder\PokemonCatchThemAll\PokemonCatchThemAll\obj\Debug\netcoreapp3.1\PokemonCatchThemAll.AssemblyInfo.cs
+D:\Thunder\PokemonCatchThemAll\PokemonCatchThemAll\obj\Debug\netcoreapp3.1\PokemonCatchThemAll.csproj.CoreCompileInputs.cache
+D:\Thunder\PokemonCatchThemAll\PokemonCatchThemAll\obj\Debug\netcoreapp3.1\PokemonCatchThemAll.dll
+D:\Thunder\PokemonCatchThemAll\PokemonCatchThemAll\obj\Debug\netcoreapp3.1\PokemonCatchThemAll.pdb
+D:\Thunder\PokemonCatchThemAll\PokemonCatchThemAll\obj\Debug\netcoreapp3.1\PokemonCatchThemAll.genruntimeconfig.cache
