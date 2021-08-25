@@ -25,6 +25,7 @@ namespace PokemonCatchThemAll
 
             var pokemonGame = new PokemonGame();
             pokemonGame.RunGame(userInput);
+            Console.WriteLine($"You did catch {pokemonGame.TotalPokemons} pokemons!!");
             Console.WriteLine("Ash position " + pokemonGame.AshLocation.GetLocation());
         }
     }

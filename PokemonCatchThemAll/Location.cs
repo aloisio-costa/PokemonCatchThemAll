@@ -15,7 +15,7 @@ namespace PokemonCatchThemAll
 
         public string GetLocation()
         {
-            return ($"({CoordinateX},{CoordinateY})");
+            return $"({CoordinateX},{CoordinateY})";
         }
 
         public bool Equals(Location obj)

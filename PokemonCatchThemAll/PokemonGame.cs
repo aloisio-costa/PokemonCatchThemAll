@@ -14,21 +14,26 @@ namespace PokemonCatchThemAll
 
     public class PokemonGame
     {
-        private List<Directions> _pathList;
+        private List<Directions> _directionsList;
         private List<Location> _visitedLocations;
-        private int _totalPokemons;
+        public int TotalPokemons { get; private set; }
         public Location AshLocation { get; private set; }
 
         public PokemonGame()
         {
             _visitedLocations = new List<Location>();
-            _totalPokemons = 0;
+            TotalPokemons = 0;
             AshLocation = new Location(0, 0);
         }
 
-        public bool CheckUserInput(string userInput)
+        protected bool ValidateUserInput(string userInput)
         {
-            _pathList = new List<Directions>();
+            if (userInput == "")
+            {
+                Console.WriteLine("No Path found");
+                return false;
+            }
+            _directionsList = new List<Directions>();
 
             //Sort user input
             List<string> userInputToList = userInput.Split(new char[] { ',', ' ' }, StringSplitOptions.RemoveEmptyEntries).ToList();
@@ -39,11 +44,11 @@ namespace PokemonCatchThemAll
             {
                 try
                 {
-                    _pathList.Add((Directions)Enum.Parse(typeof(Directions), c.ToString(), true));
+                    _directionsList.Add((Directions)Enum.Parse(typeof(Directions), c.ToString(), true));
                 }
                 catch
                 {
-                    Console.WriteLine($"\"{c}\" Invalid Path.");
+                    Console.WriteLine($"\"{c}\" Invalid Direction.");
                     return false;
                 }
             }
@@ -51,7 +56,7 @@ namespace PokemonCatchThemAll
             return true;
         }
 
-        void MoveAsh(int direction)
+        protected void MoveAsh(int direction)
         {
             switch (direction)
             {
@@ -81,24 +86,26 @@ namespace PokemonCatchThemAll
             if (!_visitedLocations.Contains(AshLocation))
             {
                 _visitedLocations.Add(new Location(AshLocation.CoordinateX, AshLocation.CoordinateY));
-                _totalPokemons++;
+                TotalPokemons++;
             }
         }
 
-        public void RunGame(string userInput)
+        public int RunGame(string userInput)
         {
-            if (CheckUserInput(userInput))
+            if (ValidateUserInput(userInput))
             {
                 UpdateGame();
 
-                foreach (var direction in _pathList)
+                foreach (var direction in _directionsList)
                 {
                     MoveAsh((int)direction);
                     UpdateGame();
                 }
 
-                Console.WriteLine($"You did catch {_totalPokemons} pokemons!!");
+                return TotalPokemons;
             }
+
+            return 0;
         }
     }
 }
